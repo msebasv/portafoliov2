@@ -1,11 +1,13 @@
 import React from "react";
 
+import TextHome from "../../components/TextHome";
+
 import "./index.css";
 
 const Home = () => {
   return (
-    <div>
-      <h3>SOY Home</h3>
+    <div className="container-home">
+      <TextHome />
     </div>
   );
 };

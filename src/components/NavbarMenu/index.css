@@ -19,7 +19,6 @@ a {
 }
 
 .nav-container {
-  width: 28%;
   display: flex;
   justify-content: space-between;
 }
@@ -103,13 +102,16 @@ a {
     flex-direction: column !important;
     margin: 0px;
     position: fixed;
-    top: 70px;
+    /* top: 46px; */
+    top: 55px;
     width: 100%;
     padding: 20px 0;
-    height: calc(100% - 70px);
+    height: calc(100% - 55px);
     overflow-y: auto;
     left: 100%;
     transition: all 0.5s;
+    z-index: 1000;
+    border: 0.1px solid #101010;
   }
 
   .nav-menu-visible {
@@ -139,5 +141,13 @@ a {
     display: flex;
     position: absolute;
     z-index: 100;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-container {
+    top: 46px;
+    height: calc(100% - 46px);
+    padding: 10px 0;
   }
 }
