@@ -1,0 +1,143 @@
+a {
+  color: #ffffff !important;
+  height: 100%;
+}
+
+.navbar {
+  display: flex !important;
+  justify-content: center !important;
+  background-image: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: top;
+  padding: 0 !important;
+}
+
+.navbar-container {
+  width: 90% !important;
+}
+
+.nav-container {
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  color: #efb810 !important;
+}
+
+.nav-link-a {
+  position: relative;
+  display: flex !important;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav-text {
+  margin: 0 !important;
+}
+
+.nav-text::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #efb810;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  transition: 0.4s ease-out;
+}
+
+.nav-text:hover::before {
+  width: 100%;
+}
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    float: left;
+    cursor: pointer;
+  }
+  .menu-icon span {
+    display: block;
+    width: 22px;
+    height: 4px;
+    background: #ffffff;
+    margin-bottom: 2px;
+    border-radius: 1px;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  .menu-icon span.bar1 {
+    margin-top: 2px;
+  }
+  .menu-icon:hover span {
+    margin-bottom: 4px;
+  }
+  .menu-icon:hover span.bar1 {
+    margin-top: 0px;
+  }
+
+  .nav-container {
+    background-image: url("../../assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: top;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    margin: 0px;
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+    left: 100%;
+    transition: all 0.5s;
+  }
+
+  .nav-menu-visible {
+    left: 0;
+  }
+
+  .nav-text:hover::before {
+    display: none;
+  }
+
+  .nav-link-a::before {
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: #efb810;
+    position: absolute;
+    left: 0;
+    transition: 0.4s ease-out;
+    z-index: 50;
+  }
+
+  .nav-link-a:hover::before {
+    width: 100%;
+  }
+
+  .nav-text {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+  }
+}

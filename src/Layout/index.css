@@ -1,0 +1,11 @@
+.container-layout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-attachment: fixed;
+}
