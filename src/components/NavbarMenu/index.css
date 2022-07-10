@@ -112,11 +112,10 @@ a {
     flex-direction: column !important;
     margin: 0px;
     position: fixed;
-    /* top: 46px; */
-    top: 65px;
+    top: 66px;
     width: 100%;
     padding: 20px 0;
-    height: calc(100% - 55px);
+    height: calc(100% - 66px);
     overflow-y: auto;
     left: 100%;
     transition: all 0.5s;
@@ -153,11 +152,3 @@ a {
     z-index: 100;
   }
 }
-
-/* @media (max-width: 560px) {
-  .nav-container {
-    top: 46px;
-    height: calc(100% - 46px);
-    padding: 10px 0;
-  }
-} */
