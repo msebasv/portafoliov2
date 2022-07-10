@@ -113,7 +113,7 @@ a {
     margin: 0px;
     position: fixed;
     /* top: 46px; */
-    top: 55px;
+    top: 65px;
     width: 100%;
     padding: 20px 0;
     height: calc(100% - 55px);
@@ -154,10 +154,10 @@ a {
   }
 }
 
-@media (max-width: 560px) {
+/* @media (max-width: 560px) {
   .nav-container {
     top: 46px;
     height: calc(100% - 46px);
     padding: 10px 0;
   }
-}
+} */
