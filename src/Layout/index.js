@@ -11,10 +11,10 @@ import "./index.css";
 const Layout = () => {
   return (
     <div className="container-layout">
-      <header>
+      <header className="header-layout">
         <NavbarMenu />
       </header>
-      <main>
+      <main className="main-layout">
         <PageTransition>
           <Outlet />
           <SocialMedia />

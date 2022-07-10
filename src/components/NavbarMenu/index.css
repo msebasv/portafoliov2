@@ -12,6 +12,7 @@ a {
   background-position-x: left;
   background-position-y: top;
   padding: 0 !important;
+  height: 100%;
 }
 
 .navbar-container {
@@ -25,6 +26,10 @@ a {
 
 .navbar-brand {
   color: #efb810 !important;
+}
+
+.text-brand {
+  margin: 0;
 }
 
 .nav-link-a {
@@ -63,12 +68,14 @@ a {
   padding: 0 20px;
   display: none;
 }
+
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
     float: left;
     cursor: pointer;
   }
+
   .menu-icon span {
     display: block;
     width: 22px;
@@ -81,12 +88,15 @@ a {
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
   }
+
   .menu-icon span.bar1 {
     margin-top: 2px;
   }
+
   .menu-icon:hover span {
     margin-bottom: 4px;
   }
+
   .menu-icon:hover span.bar1 {
     margin-top: 0px;
   }

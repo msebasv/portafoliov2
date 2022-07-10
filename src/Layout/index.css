@@ -9,3 +9,11 @@
   background-position-y: center;
   background-attachment: fixed;
 }
+
+.header-layout {
+  height: 10%;
+}
+
+.main-layout {
+  height: 90%;
+}

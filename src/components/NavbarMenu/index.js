@@ -17,7 +17,7 @@ const NavbarMenu = () => {
     <Navbar className="navbar">
       <Container className="navbar-container" fluid>
         <Navbar.Brand className="navbar-brand" as={Link} to="/">
-          <h1>{"<SM />"}</h1>
+          <h1 className="text-brand">{"<SM />"}</h1>
         </Navbar.Brand>
         <div className="menu-icon" onClick={handleClick}>
           <span className="bar1"></span>

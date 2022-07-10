@@ -1,78 +1,76 @@
-.text-home-container {
-  display: flex;
-  height: 80vh;
-  justify-content: center;
-  flex-direction: column;
-  color: #ffffff;
-}
-
-.text-i-am {
-  margin: 0 0 0 50px;
-}
-
-.text-home-title {
-  margin: 0;
-  color: #efb810;
-  font-size: 5rem;
-}
-
-.Typewriter {
-  display: flex;
-  margin-left: 72%;
-}
-
-@media (max-width: 890px) {
-  .text-home-title {
-    font-size: 4rem;
+  .text-home-container {
+    color: #ffffff;
   }
 
   .text-i-am {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 50px;
   }
-}
 
-@media (max-width: 685px) {
   .text-home-title {
-    font-size: 3rem;
+    margin: 0;
+    color: #efb810;
+    font-size: 5rem;
   }
 
   .Typewriter {
-    font-size: 15px;
-    margin-left: 60%;
+    display: flex;
+    margin-left: 72%;
   }
 
-  .text-i-am {
-    margin: 0 0 0 30px;
-    font-size: 15px;
-  }
-}
+  @media (max-width: 890px) {
+    .text-home-title {
+      font-size: 4rem;
+    }
 
-@media (max-width: 515px) {
-  .text-home-title {
-    font-size: 2rem;
-  }
-  .Typewriter {
-    font-size: 12px;
-    margin-left: 55%;
+    .text-i-am {
+      margin: 0 0 0 40px;
+    }
   }
 
-  .text-i-am {
-    margin: 0 0 0 20px;
-    font-size: 12px;
-  }
-}
+  @media (max-width: 685px) {
+    .text-home-title {
+      font-size: 3rem;
+    }
 
-@media (max-width: 341px) {
-  .text-home-title {
-    font-size: 25px;
-  }
-  .Typewriter {
-    font-size: 10px;
-    margin-left: 46%;
+    .Typewriter {
+      font-size: 15px;
+      margin-left: 60%;
+    }
+
+    .text-i-am {
+      margin: 0 0 0 30px;
+      font-size: 15px;
+    }
   }
 
-  .text-i-am {
-    margin: 0 0 0 20px;
-    font-size: 10px;
+  @media (max-width: 515px) {
+    .text-home-title {
+      font-size: 2rem;
+    }
+
+    .Typewriter {
+      font-size: 12px;
+      margin-left: 55%;
+    }
+
+    .text-i-am {
+      margin: 0 0 0 20px;
+      font-size: 12px;
+    }
   }
-}
+
+  @media (max-width: 341px) {
+    .text-home-title {
+      font-size: 25px;
+    }
+
+    .Typewriter {
+      font-size: 10px;
+      margin-left: 46%;
+    }
+
+    .text-i-am {
+      margin: 0 0 0 20px;
+      font-size: 10px;
+    }
+  }
