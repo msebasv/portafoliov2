@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Navbar, Nav, Container } from "react-bootstrap";
 
-import "./index.css";
+import "./index.scss";
 
 const NavbarMenu = () => {
   const [mobileOpen, setMobileOpen] = useState(false);

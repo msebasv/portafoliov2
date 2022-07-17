@@ -1,3 +1,5 @@
+@import "../../styles/colors.scss";
+
 .container-social {
   display: flex;
   flex-direction: column;
@@ -8,9 +10,13 @@
   z-index: 3;
 }
 
+.container-icons {
+  margin-bottom: 5px;
+}
+
 .github {
-  font-size: 23px;
-  color: #efb810;
+  width: 25px;
+  height: 25px;
 }
 
 .github:hover {
@@ -20,8 +26,8 @@
 }
 
 .twitter {
-  font-size: 23px;
-  color: #efb810;
+  width: 25px;
+  height: 25px;
 }
 
 .twitter:hover {
@@ -31,8 +37,8 @@
 }
 
 .linkedin {
-  font-size: 23px;
-  color: #efb810;
+  width: 23px;
+  height: 23px;
 }
 
 .linkedin:hover {
@@ -44,5 +50,5 @@
 .line-contact {
   width: 2px;
   height: 3rem;
-  background-color: #efb810;
+  background: $primary-color;
 }

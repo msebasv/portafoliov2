@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 
-import "./index.css";
+import Github from "../Icons/Github";
+import Twitter from "../Icons/Twitter";
+import Linkedin from "../Icons/Linkedin";
+
+import "./index.scss";
 
 const SocialMedia = () => {
   return (
@@ -14,31 +18,35 @@ const SocialMedia = () => {
       exit={{ opacity: 0 }}
       className="container-social"
     >
-      <motion.div
-        initial={{ transform: "scale(0)" }}
-        animate={{ scale: [0, 1, 1.5, 1] }}
-        transition={{ type: "spring", duration: 1, delay: 1 }}
-      >
-        <a href="https://github.com/msebasv" target="blank">
-          <BsGithub className="github" />
-        </a>
-      </motion.div>
-      <motion.div
-        initial={{ transform: "scale(0)" }}
-        animate={{ scale: [0, 1, 1.5, 1] }}
-        transition={{ type: "spring", duration: 1, delay: 1.2 }}
-      >
-        <BsTwitter className="twitter" />
-      </motion.div>
-      <motion.div
-        initial={{ transform: "scale(0)" }}
-        animate={{ scale: [0, 1, 1.5, 1] }}
-        transition={{ type: "spring", duration: 1, delay: 1.4 }}
-      >
-        <a href="https://www.linkedin.com/in/msebasv/" target="blank">
-          <FaLinkedinIn className="linkedin" />
-        </a>
-      </motion.div>
+      <div className="container-icons">
+        <motion.div
+          initial={{ transform: "scale(0)" }}
+          animate={{ scale: [0, 1, 1.5, 1] }}
+          transition={{ type: "spring", duration: 1, delay: 1 }}
+        >
+          <a href="https://github.com/msebasv" target="blank">
+            <Github className="github" />
+          </a>
+        </motion.div>
+        <motion.div
+          initial={{ transform: "scale(0)" }}
+          animate={{ scale: [0, 1, 1.5, 1] }}
+          transition={{ type: "spring", duration: 1, delay: 1.2 }}
+        >
+          <a href="#" target="blank">
+            <Twitter className="twitter" />
+          </a>
+        </motion.div>
+        <motion.div
+          initial={{ transform: "scale(0)" }}
+          animate={{ scale: [0, 1, 1.5, 1] }}
+          transition={{ type: "spring", duration: 1, delay: 1.4 }}
+        >
+          <a href="https://www.linkedin.com/in/msebasv/" target="blank">
+            <Linkedin className="linkedin" />
+          </a>
+        </motion.div>
+      </div>
       <motion.div
         className="line-contact"
         initial={{

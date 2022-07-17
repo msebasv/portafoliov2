@@ -1,8 +1,9 @@
 import React from "react";
 
 import TextHome from "../../components/TextHome";
+import TitleHome from "../../components/TitleHome";
 
-import "./index.css";
+import "./index.scss";
 
 const Home = () => {
   return (

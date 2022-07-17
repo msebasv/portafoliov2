@@ -1,4 +1,4 @@
-import "./App.css";
+import React from "react";
 
 import Layout from "./Layout/index";
 import Home from "./pages/Home";
@@ -12,7 +12,7 @@ import { AnimatePresence } from "framer-motion";
 const App = () => {
   const location = useLocation();
   return (
-    <AnimatePresence exitBeforeEnter className="App">
+    <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />

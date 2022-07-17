@@ -1,3 +1,6 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+
 a {
   color: #ffffff !important;
   height: 100%;
@@ -6,7 +9,8 @@ a {
 .navbar {
   display: flex !important;
   justify-content: center !important;
-  background-image: url("../../assets/images/background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: left;
@@ -29,6 +33,10 @@ a {
 }
 
 .text-brand {
+  font-family: $tangerine-cursive;
+  background: $primary-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0;
 }
 
@@ -49,7 +57,7 @@ a {
   content: "";
   height: 3px;
   width: 0%;
-  background: #efb810;
+  background: $primary-color;
   position: absolute;
   left: 0;
   bottom: 0px;
@@ -102,7 +110,8 @@ a {
   }
 
   .nav-container {
-    background-image: url("../../assets/images/background.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: left;
@@ -135,7 +144,8 @@ a {
     content: "";
     height: 100%;
     width: 0%;
-    background-color: #efb810;
+    background: $primary-color;
+    color: #000000 !important;
     position: absolute;
     left: 0;
     transition: 0.4s ease-out;
@@ -144,11 +154,21 @@ a {
 
   .nav-link-a:hover::before {
     width: 100%;
+    color: #000000 !important;
   }
 
   .nav-text {
     display: flex;
     position: absolute;
     z-index: 100;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-text:hover {
+    color: #000000;
+    transition-delay: 0.2s;
   }
 }

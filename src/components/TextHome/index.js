@@ -1,28 +1,16 @@
 import React from "react";
 
 import Typewriter from "typewriter-effect";
+import TitleHome from "../TitleHome";
 
-import "./index.css";
+import "./index.scss";
 
 const TextHome = () => {
   return (
     <div className="text-home-container">
       <p className="text-i-am">I AM</p>
-      <h1 className="text-home-title">{"<Sebastian Martinez />"}</h1>
-      <Typewriter
-        options={{
-          loop: true,
-          skipAddStyles: true,
-          wrapperClassName: "text-home-subtitle",
-        }}
-        onInit={(typewriter) => {
-          typewriter
-            .typeString("A Frontend Developer")
-            .pauseFor(2000)
-            .deleteAll()
-            .start();
-        }}
-      />
+      <TitleHome text={"<Sebastian Martinez/>"} />
+      <p className="subtitle">A Frontend developer</p>
     </div>
   );
 };

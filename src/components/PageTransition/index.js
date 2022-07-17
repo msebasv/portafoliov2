@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import "./index.css";
+import "./index.scss";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
