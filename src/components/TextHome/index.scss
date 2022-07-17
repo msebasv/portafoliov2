@@ -1,13 +1,14 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+
 .text-home-container {
   color: #ffffff;
 }
 
 .text-i-am {
   margin: 0 0 0 90px;
-}
-
-.text-home-title {
-  margin: 0;
+  font-size: 20px;
+  font-family: $quintessential;
 }
 
 .subtitle {
@@ -19,7 +20,7 @@
 
 @media (max-width: 890px) {
   .text-i-am {
-    font-size: 15px;
+    font-size: 18px;
     margin: 0 0 0 80px;
   }
 
@@ -31,7 +32,7 @@
 
 @media (max-width: 825px) {
   .text-i-am {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 0 0 50px;
   }
 
@@ -44,21 +45,21 @@
 @media (max-width: 685px) {
   .text-i-am {
     margin: 0 0 0 50px;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 655px) {
   .text-i-am {
     margin: 0 0 0 46px;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 515px) {
   .text-i-am {
     margin: 0 0 0 35px;
-    font-size: 11px;
+    font-size: 12px;
   }
   .subtitle {
     font-size: 12px;

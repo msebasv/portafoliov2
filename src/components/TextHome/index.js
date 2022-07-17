@@ -8,7 +8,7 @@ import "./index.scss";
 const TextHome = () => {
   return (
     <div className="text-home-container">
-      <p className="text-i-am">I AM</p>
+      <p className="text-i-am">I am</p>
       <TitleHome text={"<Sebastian Martinez/>"} />
       <p className="subtitle">A Frontend developer</p>
     </div>
