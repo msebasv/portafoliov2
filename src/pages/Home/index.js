@@ -1,7 +1,6 @@
 import React from "react";
 
 import TextHome from "../../components/TextHome";
-import TitleHome from "../../components/TitleHome";
 
 import "./index.scss";
 

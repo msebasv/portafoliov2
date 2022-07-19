@@ -52,3 +52,24 @@
   height: 3rem;
   background: $primary-color;
 }
+
+@media (max-width: 980px) {
+  .container-social {
+    left: 1.5rem;
+  }
+
+  .github {
+    width: 23px;
+    height: 23px;
+  }
+
+  .twitter {
+    width: 23px;
+    height: 23px;
+  }
+
+  .linkedin {
+    width: 21px;
+    height: 21px;
+  }
+}

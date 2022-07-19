@@ -2,9 +2,6 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { FaLinkedinIn } from "react-icons/fa";
-
 import Github from "../Icons/Github";
 import Twitter from "../Icons/Twitter";
 import Linkedin from "../Icons/Linkedin";
@@ -33,7 +30,7 @@ const SocialMedia = () => {
           animate={{ scale: [0, 1, 1.5, 1] }}
           transition={{ type: "spring", duration: 1, delay: 1.2 }}
         >
-          <a href="#" target="blank">
+          <a href="https://twitter.com/" target="blank">
             <Twitter className="twitter" />
           </a>
         </motion.div>

@@ -17,6 +17,7 @@
 .titleWrapper {
   background: $primary-color;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
@@ -29,6 +30,7 @@
   height: 100%;
   background: #ffffff;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   clip-path: polygon(

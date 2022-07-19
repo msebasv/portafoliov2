@@ -36,6 +36,7 @@ a {
   font-family: $tangerine-cursive;
   background: $primary-color;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
 }
