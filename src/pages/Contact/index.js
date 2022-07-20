@@ -8,6 +8,7 @@ const Contact = () => {
   return (
     <div className="container-contact">
       <h2 className="title-contact">CONTACT</h2>
+      <p>Envíame un mensaje...</p>
       <div className="card-container-contact">
         <ContactForm />
       </div>

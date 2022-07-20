@@ -1,11 +1,50 @@
+@import "../../styles/colors.scss";
+
 Form div {
   margin-bottom: 5px;
+  color: #808080;
 }
 
-button {
-  width: 100%;
+input {
+  background: none !important;
+  border: none !important;
+  border-bottom: 1px solid #ffffff !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+
+  &:focus {
+    // border: 1px solid #ffffff !important;
+    box-shadow: none !important;
+  }
+}
+
+textarea {
+  background: none !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+
+  &:focus {
+    border: 1px solid #ffffff !important;
+    box-shadow: none !important;
+  }
 }
 
 .message {
   height: 150px !important;
+}
+
+button {
+  width: 100%;
+  background: $primary-color;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgb(202, 174, 128, 1) 0%,
+      rgb(236, 185, 103, 1) 35%,
+      rgba(202, 174, 128, 1) 100%
+    );
+  }
 }
