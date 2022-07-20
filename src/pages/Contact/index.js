@@ -1,11 +1,16 @@
 import React from "react";
 
+import ContactForm from "../../components/ContactForm";
+
 import "./index.scss";
 
 const Contact = () => {
   return (
-    <div>
-      <h3>SOY CONTACT</h3>
+    <div className="container-contact">
+      <h2 className="title-contact">CONTACT</h2>
+      <div className="card-container-contact">
+        <ContactForm />
+      </div>
     </div>
   );
 };

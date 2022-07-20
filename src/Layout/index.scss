@@ -1,7 +1,7 @@
 .container-layout {
   position: absolute;
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   background-color: #000000;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../assets/images/background.jpg");
@@ -21,17 +21,17 @@
 }
 
 .header-layout {
-  height: 10%;
+  height: 67px;
+  position: sticky;
+  top: 0;
   width: 100%;
-  position: fixed;
   z-index: 100;
 }
 
 .main-layout {
-  height: 100%;
+  min-height: 90vh;
   display: flex;
+  min-width: 100%;
   justify-content: center;
-  text-align: center;
   align-items: center;
-  z-index: 2;
 }

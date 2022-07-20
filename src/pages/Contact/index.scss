@@ -1,0 +1,18 @@
+.container-contact {
+  display: flex;
+  justify-content: center;
+  width: 100vh;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  .title-contact {
+    margin: 0;
+  }
+
+  .card-container-contact {
+    margin-top: 30px;
+    width: 100%;
+  }
+}

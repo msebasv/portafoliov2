@@ -1,29 +1,33 @@
 @import "../../styles/colors.scss";
 
-p {
-  text-align: justify;
-}
-
-h2 {
-  background: $primary-color;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .container-about {
-  text-align: start;
   display: flex;
+  text-align: start;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 30px;
   position: relative;
   height: 90%;
   color: #fff;
 
-  .container-grid-about {
-    width: 70% !important;
+  p {
+    text-align: justify;
+  }
+
+  img {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  h2 {
+    background: $primary-color;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .container-grid-about {
+    width: 70% !important;
 
     .title-about {
       text-align: center;
@@ -32,6 +36,16 @@ h2 {
     .picture-avatar {
       width: 370px;
       height: 240px;
+
+      @media screen and (max-width: 540px) {
+        width: 300px;
+        height: 200px;
+      }
+
+      @media screen and (max-width: 414px) {
+        width: 250px;
+        height: 150px;
+      }
     }
 
     .line {
@@ -39,6 +53,14 @@ h2 {
       width: 370px;
       height: 2px;
       background: $primary-color;
+
+      @media screen and (max-width: 580px) {
+        width: 300px;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 200px;
+      }
     }
 
     .skills {
@@ -81,19 +103,23 @@ h2 {
       margin-top: 20px;
       width: 370px;
       height: 270px;
-    }
-  }
-}
 
-@media (max-width: 580px) {
-  .line {
-    width: 300px;
+      @media screen and (max-width: 540px) {
+        width: 300px;
+        height: 200px;
+      }
+
+      @media screen and (max-width: 414px) {
+        width: 250px;
+        height: 150px;
+      }
+    }
   }
 }
 
 @media (max-width: 540px) {
   .picture-avatar {
-    width: 300px;
+    width: 200px;
     height: 170px;
   }
 
